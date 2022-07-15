@@ -1,0 +1,42 @@
+# Configuration for telegraf agent
+[agent]
+  interval = "10s"
+  round_interval = true
+  metric_batch_size = 1000
+  metric_buffer_limit = 10000
+  collection_jitter = "0s"
+  flush_interval = "10s"
+  flush_jitter = "0s"
+  precision = ""
+  debug = false
+  quiet = false
+  hostname = ""
+  omit_hostname = false
+
+
+### OUTPUT
+
+[[outputs.influxdb]]
+  ## The full HTTP or UDP URL for your InfluxDB instance.
+  ##
+  ## Multiple URLs can be specified for a single cluster, only ONE of the
+  ## urls will be written to each interval.
+  # urls = ["unix:///var/run/influxdb.sock"]
+  # urls = ["udp://127.0.0.1:8089"]
+  urls = ["http://Monitoring-Server-Private-IP:8086"]
+
+  ## The target database for metrics; will be created as needed.
+  ## For UDP url endpoint database needs to be configured on server side.
+  database = "Database-Name-For-Mysql"
+
+
+[[inputs.mysql]]
+  servers = ["Master-User-Name:Password@tcp(Master-DB-Instance-Endpoint:3306)/?tls=false"]
+  [inputs.mysql.tags]
+  database_type = 'Master-DB-identifier'
+
+[[inputs.mysql]]
+  servers = ["Master-User-Name:Password@tcp(Read-Replica-Endpoint:3306)/?tls=false"]
+  [inputs.mysql.tags]
+    database_type = 'Read-Replica-identifier'
+
