@@ -1,7 +1,7 @@
 {
   "__inputs": [
     {
-      "name": "DS_PUPPYRED_INFRA",
+      "name": "test_rds_monitoring",
       "label": "test_rds_monitoring",
       "description": "",
       "type": "datasource",
@@ -128,7 +128,7 @@
           "alias": "Connections per second",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -185,7 +185,7 @@
           "alias": "Max used connections",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -328,7 +328,7 @@
           "alias": "Threads connected",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -379,7 +379,7 @@
           "alias": "Threads running",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -527,7 +527,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -647,7 +647,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -752,7 +752,7 @@
           "alias": "Data Out",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -808,7 +808,7 @@
           "alias": "Data In",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -945,7 +945,7 @@
           "alias": "Table Locks Immediate",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1002,7 +1002,7 @@
           "alias": "Table Locks Waited",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1137,7 +1137,7 @@
           "alias": "Select Full Join",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1193,7 +1193,7 @@
           "alias": "Select Full Range Join",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1249,7 +1249,7 @@
           "alias": "Select Range",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1305,7 +1305,7 @@
           "alias": "Select Range Check",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1361,7 +1361,7 @@
           "alias": "Select Scan",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1498,7 +1498,7 @@
           "alias": "Created Tmp Tables",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1555,7 +1555,7 @@
           "alias": "Created Tmp Disk Tables",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1611,7 +1611,7 @@
           "alias": "Created Tmp Files",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1744,7 +1744,7 @@
           "alias": "Slow Queries Per Second",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1879,7 +1879,7 @@
           "alias": "Sort Rows",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1935,7 +1935,7 @@
           "alias": "Sort Range",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -1991,7 +1991,7 @@
           "alias": "Sort Merge Passes",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -2047,7 +2047,7 @@
           "alias": "Sort Scan",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_PUPPYRED_INFRA}"
+            "uid": "${test_rds_monitoring}"
           },
           "dsType": "influxdb",
           "groupBy": [
@@ -2139,7 +2139,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -2336,7 +2336,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -2828,7 +2828,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -3321,7 +3321,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -3763,7 +3763,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -4219,7 +4219,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -4390,7 +4390,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -4742,7 +4742,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -4874,7 +4874,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -5006,7 +5006,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -5134,7 +5134,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_PUPPYRED_INFRA}"
+        "uid": "${test_rds_monitoring}"
       },
       "editable": true,
       "error": false,
@@ -5267,7 +5267,7 @@
         "current": {},
         "datasource": {
           "type": "influxdb",
-          "uid": "${DS_PUPPYRED_INFRA}"
+          "uid": "${test_rds_monitoring}"
         },
         "definition": "SHOW TAG VALUES FROM \"mysql\" WITH KEY = \"database_type\"",
         "hide": 0,
